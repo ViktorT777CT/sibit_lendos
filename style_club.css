@@ -1,3 +1,18 @@
+body {
+  margin: auto;
+  font-family: "Raleway", arial;
+}
 
+a {
+  text-decoration: none;
+}
+
+.head_bg {
+  background: linear-gradient(89.97deg, #133578 46.78%, rgba(17, 17, 17, 0.2) 101.25%);
+}
+.head_bg-png {
+  position: relative;
+  z-index: -10;
+}
 
 /*# sourceMappingURL=style_club.css.map */
