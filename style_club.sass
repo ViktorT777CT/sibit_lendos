@@ -1,11 +1,61 @@
 body
   margin: auto
   font-family: 'Raleway', arial
+  position: inherit
+  max-width: 1604px
 a
   text-decoration: none
-.head_bg
-  background: linear-gradient(89.97deg, #133578 46.78%, rgba(17, 17, 17, 0.2) 101.25%)
+header
+  position: fixed
+  top: 60px
+  left: 50%
+  transform: translate(-50%, -50%)
+.container_1160
+  max-width: 1160px
+  margin: auto
+.head
+  &_block
+    height: 100vh
+  &_bg
+    background: linear-gradient(89.97deg, #133578 46.78%, rgba(17, 17, 17, 0.2) 101.25%)
+    &-png
+      position: relative
+      z-index: -10
+.nav-link
+  font-weight: 500
+  color: #fff
+.head_bg-png
+  position: absolute
+  right: 0
+  img
+    width: auto
+    height: 100vh
+.button_join
+  background-color: #29ABE1
+  border-radius: 5px
+  padding: 15px 50px 15px 50px
+.text_blu
+  color: #133578
+.border_blu
+  border-color: #133578!important
+.text_gray
+  color: #6D6D6D!important
+.bg_gray
+  background-color: #F4F4F4
+.text_mentor
+  line-height: 18px
+u
+  text-decoration: none
+  border-bottom: 2px solid
+.mission_bg
+  background: linear-gradient(0.01deg, #133578 0.01%, rgba(19, 53, 120, 0.7) 99.99%)
+  height: 652px
   &-png
-    position: relative
+    position: absolute
     z-index: -10
-
+    margin-left: auto
+    margin-right: auto
+    left: 50%
+    right: 50%
+    text-align: center
+    transform: translate(-50%, 0%)
