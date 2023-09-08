@@ -1,4 +1,4 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style_club.css">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 <header id="header" class="container-fluid container_1160">
@@ -361,42 +361,274 @@
             <h2 class="text-center fw-bold mt-5 mb-5 mb-5 pb-5">ОТЗЫВЫ ВЫПУСКНИКОВ</h2>
         </div>
         <div>
-            <div class="owl-carousel owl-theme" id="owlCarousel1">
-                <div class="p-4 reviews_bg">
-                    <div class="d-flex">
+            <div class="owl-carousel" id="owlCarousel1">
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
                         <div>
-                            <img src="/img/ava1.png">
+                            <img class="reviews_icon" src="/img/reviews/1.png">
                         </div>
                         <div class="ps-4">
-                            <h5 class="text_blu mb-0 fw-bold">Евгения Грачева</h5>
-                            <p class="text_gray m-0">Выпускница направления “Менеджмент”</p>
-                            <p class="text_gray mb-0">2022 г.</p>
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">Евгения Грачева</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2022 г.</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="m-auto d-flex align-item-center">
                         <p>Учеба завершилась, но желание прийти в СИБИТ осталось!!!
                             Дорогие абитуриенты, никогда не бойтесь и не
                             прячьте свои возможности, которые у вас есть</p>
                     </div>
                 </div>
-                <div class="p-4 reviews_bg">
-                    <div class="d-flex">
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
                         <div>
-                            <img src="/img/ava1.png">
+                            <img class="reviews_icon" src="/img/reviews/2.png">
                         </div>
                         <div class="ps-4">
-                            <h5 class="text_blu mb-0 fw-bold">Евгения Грачева</h5>
-                            <p class="text_gray m-0">Выпускница направления “Менеджмент”</p>
-                            <p class="text_gray mb-0">2022 г.</p>
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">София Гаркавая</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2021 г.</p>
                         </div>
                     </div>
-                    <div>
-                        <p>Учеба завершилась, но желание прийти в СИБИТ осталось!!!
-                            Дорогие абитуриенты, никогда не бойтесь и не
-                            прячьте свои возможности, которые у вас есть</p>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Я взяла от студенческой жизни максимум - стала председателем студ.совета,
+                            выиграла денежный приз в конкурсе проектов, активно участвовала в
+                            студенческой весне, ставила танцы, концерты, развлекательные мероприятия,
+                             создала музыкальную группировку «3с». Я безмерно счастлива и благодарна
+                            за всё, что было в моей студенческой жизни!</p>
                     </div>
                 </div>
-
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/3.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">Дарья Козюлина</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускница направления “Юриспруденция”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2022 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Спасибо за незаменимые теоретические и практические знания,
+                            которые сейчас я применяю в своей деятельности, преподавателям!!</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/4.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">Яна Деканова</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2022 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Студентам я желаю наслаждаться этим периодом и ходить на пары,
+                            потому что время - это ценнейший ресурс, а ВУЗ - это место,
+                            где мы осознанно должны черпать знания</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/5.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">Тамерлан Муталяпов</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2022 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Оказывается, работа может быть интересной, хорошо оплачиваемой, на которую хочется ходить.
+                            Но чтобы получить такую работу, из себя нужно что-то представлять.
+                            Именно СИБИТ позволил мне выйти на рынок и быть конкурентоспособным</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/6.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">Эмилия Шнитова</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускница направления “Экономика”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2023 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Студенческая жизнь для меня была полна ярких красок и эмоций.
+                            Институт дал мне не только образование, но и помог развить мои таланты</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/7.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">Екатерина Янченко</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускница направления “Менеджемент”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2022 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Студенческая жизнь была всякой, это как мини жизнь, но такая же насыщенная.
+                            Я получила множество возможностей благодаря
+                            преподавателям и студенческому совету</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/8.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">Александр Кремер</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускник направления “Менеджмент”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2022 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Я уже работаю по своей профессии и дальнейшие планы заключаются в том,
+                            чтобы остаться в компании, в отдела маркетинга.
+                            Но это как первая ступень, дальше будем подниматься выше и покорять новые вершины</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/9.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">Алёна Городнова</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускница направления “Юриспруденция”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2021 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Моя студенческая жизнь отличалась особой насыщенностью.
+                            Это и конкурентная борьба между студентами, отстаивающими свою точку зрения.
+                            И разнообразные мероприятия как внутри вуза, так и межвузовские. Это научные конференции,
+                            где можно было зарекомендовать себя в качестве молодого ученого. Кроме того практика,
+                            которую я проходила в период обучения, открыла для меня много нового и познавательного,
+                            что сложно узнать в теории, не погружаясь непосредственно в рабочий процесс</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/10.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold text-center text-md-start">Ксения Архипова</h5>
+                            <p class="text_gray m-0 text-center text-md-start">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0 text-center text-md-start">2022 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>СИБИТ “закалил” нас. Ведь очень важно, чтобы внутри формировался стержень,
+                            который бы помогал, смело идти вперед и не бояться трудностей и перемен!</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/11.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold  text-center text-md-start">Елизавета Оленева</h5>
+                            <p class="text_gray m-0  text-center text-md-start">Выпускница направления “Юриспруденция”</p>
+                            <p class="text_gray mb-0  text-center text-md-start">2023 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>В студенческие годы я начала высказывать своё мнение, отстаивать его и
+                            предлагать все возможные идеи, и иногда даже безумные. И они все были реализованы.
+                            И это благодаря институту, здесь никогда тебе не скажут, что твои идеи дурацкие
+                            и уж точно не будут смеяться над ними. А наоборот будут лишь поддерживать,
+                            давать советы и помогать их реализовать</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/12.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold  text-center text-md-start">Юлия Скорокина-Кузнецова</h5>
+                            <p class="text_gray m-0  text-center text-md-start">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0  text-center text-md-start">2021 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Студенческую жизнь можно определить как «успеть всё»:
+                            получать знания, выполнять все задания, соблюдая сроки,
+                            подрабатывать, заниматься любимыми делами и попросту отдыхать.
+                            Оглядываясь назад понимаю, что студенческая жизнь - это очень интересный
+                            и яркий период в жизни, который знакомит человека с огромным количеством людей,
+                            профессионалами в своей области и высококлассными специалистами,
+                            поработав с которыми, хочется творить.</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/13.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold  text-center text-md-start">Азад Аббасов</h5>
+                            <p class="text_gray m-0  text-center text-md-start">Выпускник направления “Государственное и муниципальное управление”</p>
+                            <p class="text_gray mb-0  text-center text-md-start">2023 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Cтуденческая жизнь - это прекрасное движение, наполненное позитивом.
+                            Она запомнится мне, как одна из самых ярких периодов в моей жизни.
+                            Потому что фактически, это мой первый, самостоятельный опыт,
+                            как личности, так и уже готового специалиста</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/14.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 text-center text-md-start">Анастасия Мясникова</h5>
+                            <p class="text_gray m-0  text-center text-md-start">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0  text-center text-md-start">2023 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Студенческая жизнь - это самое прекрасное, яркое и запоминающиеся время,
+                            а также масса возможностей и перспектив. Жизнь в стенах учебного
+                            заведения просто «кипела и бурлилая», для меня, как для человека с
+                            активной жизненной позицией, было очень важно не только получить
+                            профессиональные знания и навыки, но и реализоваться, как личность
+                            и зарекомендовать себя на рынке труда.</p>
+                    </div>
+                </div>
+                <div class="p-5 reviews_bg d-flex flex-column">
+                    <div class="d-flex flex-column flex-md-row mb-1 mb-md-5">
+                        <div>
+                            <img class="reviews_icon" src="/img/reviews/15.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold  text-center text-md-start">Никита Бунин</h5>
+                            <p class="text_gray m-0  text-center text-md-start">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0  text-center text-md-start">2022 г.</p>
+                        </div>
+                    </div>
+                    <div class="m-auto d-flex align-item-center">
+                        <p>Планы очень грандиозные! Меня все это время мотивировали преподаватели и
+                            атмосфера вуза! Я хочу открыть свой бизнес. И конечно,
+                            обязательно воспользуюсь знаниями, которые приобрел в СИБИТе</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -505,11 +737,11 @@
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
 <script src="/js/js.js"></script>
 </body>
 </html>

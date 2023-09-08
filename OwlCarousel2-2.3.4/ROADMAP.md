@@ -1,4 +1,4 @@
-# OwlCarousel 2 Roadmap
+ OwlCarousel 2 Roadmap
 
 You can discuss the roadmap here: [#1756](https://github.com/OwlCarousel2/OwlCarousel2/issues/1756).
 
