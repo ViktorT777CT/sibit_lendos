@@ -1,5 +1,5 @@
 body {
-  margin: auto;
+  margin: 0;
   font-family: "Raleway", arial;
   position: inherit;
   max-width: 1604px;
@@ -11,6 +11,7 @@ a {
 
 header {
   position: fixed;
+  z-index: 20;
   top: 60px;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -77,6 +78,9 @@ u {
   border-bottom: 2px solid;
 }
 
+.mission {
+  overflow: hidden;
+}
 .mission_bg {
   background: linear-gradient(0.01deg, #133578 0.01%, rgba(19, 53, 120, 0.7) 99.99%);
   height: 652px;
@@ -90,6 +94,38 @@ u {
   right: 50%;
   text-align: center;
   transform: translate(-50%, 0%);
+}
+
+.bg_contact {
+  background-color: #133578;
+}
+
+.map {
+  min-height: 400px;
+}
+
+.fs_10 {
+  font-size: 10px;
+}
+
+.div_geo {
+  width: 73px;
+}
+
+svg {
+  color: #fff;
+  margin: auto;
+}
+
+.about_button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reviews_bg {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style_club.css.map */

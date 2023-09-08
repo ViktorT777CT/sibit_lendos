@@ -17,9 +17,9 @@
 
 </head>
 <body>
-<header class="container-fluid container_1160">
-    <nav class="navbar navbar-expand-lg d-flex justify-content-between">
-        <a class="navbar-brand" href="#">
+<header id="header" class="container-fluid container_1160">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between p-4 p-lg-0">
+        <a class="navbar-brand" href="https://sibit.sano.ru/">
             <img src="/img/logo.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -28,11 +28,11 @@
         </button>
         <div class="collapse navbar-collapse  d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link" href="#">О клубе </a>
-                <a class="nav-link" href="#">Наставничество </a>
-                <a class="nav-link" href="#">Преимущества</a>
-                <a class="nav-link" href="#">Отзывы</a>
-                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link" href="#about_us">О клубе </a>
+                <a class="nav-link" href="#mentoring">Наставничество </a>
+                <a class="nav-link" href="#advantages">Преимущества</a>
+                <a class="nav-link" href="#reviews">Отзывы</a>
+                <a class="nav-link" href="#contact">Контакты</a>
                 <div class="d-flex ps-5 ms-5">
                     <a class="me-4" href="https://vk.com/sibit_cstv">
                         <img src="/img/vk.png">
@@ -46,15 +46,21 @@
     </nav>
 </header>
 <!--верхний блок-->
-<section class="container-fluid p-0 head_bg">
+<section class="container-fluid head_bg">
     <div class="d-flex position-inherit head_block container_1160 align-items-center">
-        <div class=" ">
+        <div class="w-100 ">
             <h1 class="text-white fw-bold mb-5">КЛУБ ВЫПУСКНИКОВ</h1>
             <p class="text-white fw-bold mb-5">АНОО ВО «Сибирский институт <br>
                 бизнеса и информационных <br>
                 технологий»</p>
             <a class="text-white fw-semibold button_join"
                href="https://docs.google.com/forms/d/1Fqt3JSyr1u2YW2wbeupMyitEZz1jatnLUOcnhqfPTTQ/edit?pli=1">Вступить</a>
+            <div class="d-flex flex-column justify-content-center about_button">
+                    <a class="text-white" href="#about_us">о нас</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+            </div>
         </div>
         <div class="head_bg-png">
             <img src="/img/top_img-bg.png">
@@ -62,7 +68,7 @@
     </div>
 </section>
 <!--О Клубе выпускников «СИБИТ»-->
-<section class="container-fluid">
+<section id="about_us" class="container-fluid">
     <div class="container_1160 mt-5 pt-5">
         <div>
             <h2 class="text-center fw-bold">О КЛУБЕ ВЫПУСКНИКОВ «СИБИТ»</h2>
@@ -72,7 +78,7 @@
         </div>
         <div class="row g-5">
             <div class="col-12 col-md-6">
-                <div class=" border-5 border-top border_blu m-2">
+                <div class=" border-5 border-top border_blu m-md-2">
                     <div class="d-flex justify-content-between me-4 ms-4 mt-2">
                         <h3 class="text_blu fw-semibold mt-auto mb-auto order-2 order-md-1 ms-3 ms-mb-0">Социальное
                             комьюнити</h3>
@@ -88,7 +94,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <div class=" border-5 border-top border_blu m-2">
+                <div class=" border-5 border-top border_blu m-md-2">
                     <div class="d-flex justify-content-between me-4 ms-4 mt-2">
                         <h3 class="text_blu fw-semibold mt-auto mb-auto order-2 order-md-1 ms-3 ms-mb-0">
                             Профессиональное развитие</h3>
@@ -104,7 +110,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <div class=" border-5 border-top border_blu m-2">
+                <div class=" border-5 border-top border_blu m-md-2">
                     <div class="d-flex justify-content-between me-4 ms-4 mt-2">
                         <h3 class="text_blu fw-semibold mt-auto mb-auto order-2 order-md-1 ms-3 ms-mb-0">Карьерное
                             консультирование</h3>
@@ -120,7 +126,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <div class=" border-5 border-top border_blu m-2">
+                <div class=" border-5 border-top border_blu m-md-2">
                     <div class="d-flex justify-content-between me-4 ms-4 mt-2">
                         <h3 class="text_blu fw-semibold mt-auto mb-auto order-2 order-md-1 ms-3 ms-mb-0">Активное
                             участие в жизни Института</h3>
@@ -143,7 +149,22 @@
     <div class="container_1160 mt-5 p-2">
         <h3 class="text_blu fw-semibold m-5">НОВОСТИ</h3>
         <div class="row">
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
+                <img class="rounded-1" src="/img/news/img_news1.png">
+                <p class="text_gray mb-1 mt-3">30.05.23</p>
+                <p>В Институте прошли соревнования по стрит-болу</p>
+            </div>
+            <div class="col-12 col-lg-3">
+                <img class="rounded-1" src="/img/news/img_news1.png">
+                <p class="text_gray mb-1 mt-3">30.05.23</p>
+                <p>В Институте прошли соревнования по стрит-болу</p>
+            </div>
+            <div class="col-12 col-lg-3">
+                <img class="rounded-1" src="/img/news/img_news1.png">
+                <p class="text_gray mb-1 mt-3">30.05.23</p>
+                <p>В Институте прошли соревнования по стрит-болу</p>
+            </div>
+            <div class="col-12 col-lg-3">
                 <img class="rounded-1" src="/img/news/img_news1.png">
                 <p class="text_gray mb-1 mt-3">30.05.23</p>
                 <p>В Институте прошли соревнования по стрит-болу</p>
@@ -152,11 +173,11 @@
     </div>
 </section>
 <!--программа наставничества-->
-<section class="container-fluid">
+<section id="mentoring" class="container-fluid">
     <div class="container_1160 mt-5 pt-5">
         <div class="mb-5">
             <h2 class="text-center fw-bold">ПРОГРАММА НАСТАВНИЧЕСТВА</h2>
-            <h4 class="text_blu fw-semibold mt-auto mb-auto order-2 order-md-1 ms-3 ms-mb-0 d-block d-md-none">Что такое
+            <h4 class="text_blu text-center fw-semibold mt-auto mb-auto order-2 order-md-1 d-block d-md-none">Что такое
                 наставничество в Клубе выпускников </h4>
         </div>
         <div class="row">
@@ -198,26 +219,26 @@
     </div>
 </section>
 <!--Преимущества клуба-->
-<section class="container-fluid bg_gray pb-5">
+<section id="advantages" class="container-fluid bg_gray pb-5">
     <div class="container_1160 mt-5 pt-5 pb-5">
-        <div class="mt-5 pt-5">
-            <h2 class="text-center fw-bold mt-5 mb-5 mb-5 pb-5">ПРЕИМУЩЕСТВА КЛУБА</h2>
+        <div class="mt-md-5 pt-md-5">
+            <h2 class="text-center fw-bold mt-5 mb-5 pb-5">ПРЕИМУЩЕСТВА КЛУБА</h2>
         </div>
-        <div class="row g-5">
+        <div class="row">
             <div class="col-12 col-md-4">
                 <div class="d-flex">
                     <div>
                         <img src="/img/check.png">
                     </div>
                     <div>
-                        <div class="d-flex justify-content-between me-4 ms-4">
+                        <div class="d-flex justify-content-between ms-4">
                             <h5 class="text_blu fw-semibold mt-auto mb-auto">
                                 <a class="text_blu"
                                    href="https://cdo-sano.ru/"><u>Скидка
                                     50%</u></a>
                             </h5>
                         </div>
-                        <div class="m-4 mt-1">
+                        <div class="m-4 me-0 mt-1">
                             <p class="text_gray">на программы профессиональной переподготовки</p>
                         </div>
                     </div>
@@ -229,13 +250,13 @@
                         <img src="/img/check.png">
                     </div>
                     <div>
-                        <div class="d-flex justify-content-between me-4 ms-4">
+                        <div class="d-flex justify-content-between ms-4">
                             <h5 class="text_blu fw-semibold mt-auto mb-auto">
                                 <a class="text_blu"
                                    href="https://cdo-sano.ru/">Помощь</a>
                             </h5>
                         </div>
-                        <div class="m-4 mt-1">
+                        <div class="m-4 me-0 mt-1">
                             <p class="text_gray">и консультирование в построении карьерных траекторий</p>
                         </div>
                     </div>
@@ -247,13 +268,13 @@
                         <img src="/img/check.png">
                     </div>
                     <div>
-                        <div class="d-flex justify-content-between me-4 ms-4">
+                        <div class="d-flex justify-content-between ms-4">
                             <h5 class="text_blu fw-semibold mt-auto mb-auto">
                                 <a class="text_blu"
                                    href="https://cdo-sano.ru/"><u>Консультирование</u></a>
                             </h5>
                         </div>
-                        <div class="m-4 mt-1">
+                        <div class="m-4 me-0 mt-1">
                             <p class="text_gray">в сфере маркетинга и юриспруденции</p>
                         </div>
                     </div>
@@ -265,14 +286,14 @@
                         <img src="/img/check.png">
                     </div>
                     <div>
-                        <div class="d-flex justify-content-between me-4 ms-4">
+                        <div class="d-flex justify-content-between ms-4">
                             <h5 class="text_blu fw-semibold mt-auto mb-auto">
                                 <a class="text_blu"
                                    href="https://cdo-sano.ru/">Возможность
                                     пользоваться инфраструктурой ВУЗа </a>
                             </h5>
                         </div>
-                        <div class="m-4 mt-1">
+                        <div class="m-4 me-0 mt-1">
                             <p class="text_gray">(спортивный зал, фитнес зал, конференц-зал и другие локации)</p>
                         </div>
                     </div>
@@ -284,12 +305,12 @@
                         <img src="/img/check.png">
                     </div>
                     <div>
-                        <div class="d-flex justify-content-between me-4 ms-4">
+                        <div class="d-flex justify-content-between ms-4">
                             <h5 class="text_blu fw-semibold mt-auto mb-auto">
                                 <a class="text_blu" href="https://cdo-sano.ru/">Доступ</a>
                             </h5>
                         </div>
-                        <div class="m-4 mt-1">
+                        <div class="m-4 me-0 mt-1">
                             <p class="text_gray">к информационно-библиотечной системе Института</p>
                         </div>
                     </div>
@@ -301,13 +322,13 @@
                         <img src="/img/check.png">
                     </div>
                     <div>
-                        <div class="d-flex justify-content-between me-4 ms-4">
+                        <div class="d-flex justify-content-between ms-4">
                             <h5 class="fw-semibold mt-auto mb-auto">
                                 <a class="text_blu" href="https://cdo-sano.ru/">Доступ
                                     к информационным и рекламным ресурсам</a>
                             </h5>
                         </div>
-                        <div class="m-4 mt-1">
+                        <div class="m-4 me-0 mt-1">
                             <p class="text_gray">(соц. сети и мессенджеры, видео-экраны и информационные стенды)</p>
                         </div>
                     </div>
@@ -317,7 +338,7 @@
     </div>
 </section>
 <!--миссия клуба-->
-<section class="container-fluid p-0 position-relative mission_bg">
+<section class="container-fluid position-relative mission_bg mission">
     <img class="mission_bg-png" src="/img/mission.png">
     <div class="container_1160 pt-5 pb-5 d-flex justify-content-center align-items-center h-100">
         <div>
@@ -334,32 +355,161 @@
     </div>
 </section>
 <!--Отзыв выпускников-->
-<section class="container-fluid bg_gray pb-5">
+<section id="reviews" class="container-fluid bg_gray pb-5">
     <div class="container_1160 pt-5 pb-5">
         <div class="mt-5 pt-5">
             <h2 class="text-center fw-bold mt-5 mb-5 mb-5 pb-5">ОТЗЫВЫ ВЫПУСКНИКОВ</h2>
         </div>
         <div>
-            <div class="owl-carousel owlCarousel1">
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
-                <div> Your Content </div>
+            <div class="owl-carousel owl-theme" id="owlCarousel1">
+                <div class="p-4 reviews_bg">
+                    <div class="d-flex">
+                        <div>
+                            <img src="/img/ava1.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold">Евгения Грачева</h5>
+                            <p class="text_gray m-0">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0">2022 г.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Учеба завершилась, но желание прийти в СИБИТ осталось!!!
+                            Дорогие абитуриенты, никогда не бойтесь и не
+                            прячьте свои возможности, которые у вас есть</p>
+                    </div>
+                </div>
+                <div class="p-4 reviews_bg">
+                    <div class="d-flex">
+                        <div>
+                            <img src="/img/ava1.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text_blu mb-0 fw-bold">Евгения Грачева</h5>
+                            <p class="text_gray m-0">Выпускница направления “Менеджмент”</p>
+                            <p class="text_gray mb-0">2022 г.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Учеба завершилась, но желание прийти в СИБИТ осталось!!!
+                            Дорогие абитуриенты, никогда не бойтесь и не
+                            прячьте свои возможности, которые у вас есть</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-
     </div>
 </section>
+<!--контакты-->
+<section id="contact" class="container-fluid bg_contact">
+    <div class="container_1160 pt-5 pb-5">
+        <div class="mb-5 mt-md-5 pt-md-5">
+            <h2 class="text-center fw-bold text-white">КОНТАКТЫ</h2>
+        </div>
+        <div class="row pb-5">
+            <div class="col-12 col-md-6">
+                    <div class="d-flex">
+                        <div>
+                            <img src="/img/ava1.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0 fw-bold">Александр Яковлевич Кремер</h5>
+                            <p class="text-white">Комьюнити-менеджер</p>
+                            <p class="mb-0">
+                                <a class="text-white" href="mailto:cstv_sibit@mail.ru">cstv_sibit@mail.ru</a>
+                            </p>
+                            <p>
+                                <a class="text-white" href="tel:+7 (3812) 62-59-89">+7 (3812) 62-59-89</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5">
+                        <div>
+                            <img src="/img/ava2.png">
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-0 fw-bold">Арина Александровна Ахметова</h5>
+                            <p class="text-white">Директор центра содействия трудоустройству</p>
+                            <p class="mb-0">
+                                <a class="text-white" href="mailto:cstv_sibit@mail.ru">cstv_sibit@mail.ru</a>
+                            </p>
+                            <p>
+                                <a class="text-white" href="tel:+7 (3812) 62-59-89">+7 (3812) 62-59-89</a>
+                            </p>
+                        </div>
+                    </div>
 
-<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+                <div class="d-flex">
+                    <div class="div_geo ">
+                        <img class="m-auto d-flex" src="/img/geo.png">
+                    </div>
+                    <div class="ps-4 m-auto ms-0">
+                        <p class="mb-0">
+                             <a class="text-white" href="https://2gis.ru/omsk/inside/282110631965028">644116, г. Омск, ул. 24-я Северная, д. 196 к. 1</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="pt-5 pt-md-0 h-100">
+                    <iframe class="rounded-2 map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afdff9c4b5f6759fb9851010ac23cb2b6d2f861e7bfbde723b03a4aed4957d329&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="container-fluid bg_gray pt-5 bg_gray">
+    <div class="container_1160 m-auto w-100">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <a class="navbar-brand  text-center text-md-start" href="https://sibit.sano.ru/">
+                        <img class="m-auto m-md-0 d-flex justify-content-center" src="/img/logo.png" alt="logo">
+                        <p class="fs_10">© АНОО ВО «СИБИТ», 2019-2023</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="d-flex flex-column pb-3 pb-md-0">
+                        <p class="fs_10 fw-bold text-center text-md-start">Приемная ректора</p>
+                        <a class="text-black fs_10 text-center text-md-start" href="tel:+7 (3812) 62-59-89">+7 (3812) 62-59-89</a>
+                        <a class="text-black fs_10 text-center text-md-start" href="mailto:post@sano.ru">post@sano.ru</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="d-flex flex-column  pb-3 pb-md-0">
+                        <a class="text-black fs_10 text-center text-md-start" href="#about_us">О клубе </a>
+                        <a class="text-black fs_10 text-center text-md-start" href="#mentoring">Наставничество </a>
+                        <a class="text-black fs_10 text-center text-md-start" href="#advantages">Преимущества</a>
+                        <a class="text-black fs_10 text-center text-md-start" href="#reviews">Отзывы</a>
+                        <a class="text-black fs_10 text-center text-md-start" href="#contact">Контакты</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="ps-md-5 ms-md-5">
+                        <div class="d-flex justify-content-center justify-content-md-end ps-md-5 ms-md-5">
+                            <a class="me-4" href="https://vk.com/sibit_cstv">
+                                <img src="/img/vk.png">
+                            </a>
+                            <a href="https://t.me/sibit_student">
+                                <img src="/img/tg.png">
+                            </a>
+                        </div>
+                        <div class="">
+                            <p class="text-center text-md-end fs_10 pt-3 pt-md-0">Положение об обработке и обеспечении безопасности персональных данных</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-<script src="js/js.js"></script>
+<script src="/js/js.js"></script>
 </body>
 </html>
