@@ -12,9 +12,11 @@ a {
 header {
   position: fixed;
   z-index: 20;
-  top: 60px;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
 }
 
 .container_1160 {
@@ -130,6 +132,27 @@ svg {
   height: 422px;
 }
 
+.bg_reviews-left {
+  background: rgb(244, 244, 244);
+  background: linear-gradient(90deg, rgb(244, 244, 244) 30%, rgba(0, 0, 0, 0) 70%);
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  top: 0;
+  left: -5px;
+  z-index: 10;
+}
+.bg_reviews-right {
+  background: rgb(244, 244, 244);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 30%, rgb(244, 244, 244) 70%);
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  z-index: 10;
+}
+
 .reviews_icon {
   margin: auto;
 }
@@ -139,6 +162,44 @@ svg {
   background: linear-gradient(90deg, rgb(244, 244, 244) 20%, rgba(0, 0, 0, 0) 50%, rgb(244, 244, 244) 80%);
 }
 
+.owl-nav {
+  display: flex;
+  justify-content: end;
+  margin-right: 40px;
+}
+.owl-nav .owl-prev {
+  background-image: url("/img/left.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+.owl-nav .owl-next {
+  background-image: url("/img/right.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+.owl-nav button {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 76px;
+  height: 76px;
+}
+.owl-nav button span {
+  display: none;
+}
+
+.darkHeader {
+  background-color: #fff;
+  box-shadow: 0 0 5px;
+}
+.darkHeader a, .darkHeader svg {
+  color: #000;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
 @media all and (max-width: 772px) {
   .reviews_bg {
     width: 360px;
@@ -146,6 +207,9 @@ svg {
   }
   .reviews_icon {
     max-width: 112px;
+  }
+  header {
+    padding: 0 !important;
   }
 }
 

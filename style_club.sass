@@ -8,9 +8,11 @@ a
 header
   position: fixed
   z-index: 20
-  top: 60px
+  padding-top: 35px
+  padding-bottom: 20px
+  top: 0
   left: 50%
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, 0%)
 .container_1160
   max-width: 1160px
   margin: auto
@@ -82,11 +84,57 @@ svg
   background-color: #fff
   width: 660px
   height: 422px
+.bg_reviews
+  &-left
+    background: rgb(244,244,244)
+    background: linear-gradient(90deg, rgba(244,244,244,1) 30%, rgba(0,0,0,0) 70%)
+    position: absolute
+    width: 10%
+    height: 100%
+    top: 0
+    left: -5px
+    z-index: 10
+  &-right
+    background: rgb(244,244,244)
+    background: linear-gradient(90deg, rgba(0,0,0,0) 30%, rgba(244,244,244,1) 70%)
+    position: absolute
+    width: 10%
+    height: 100%
+    top: 0
+    right: -5px
+    z-index: 10
 .reviews_icon
   margin: auto
 #owlCarousel1
   background: rgb(244,244,244)
   background: linear-gradient(90deg, rgba(244,244,244,1) 20%, rgba(0,0,0,0) 50%, rgba(244,244,244,1) 80%)
+.owl-nav
+  display: flex
+  justify-content: end
+  margin-right: 40px
+  .owl-prev
+    background-image: url("/img/left.png")!important
+    background-repeat: no-repeat!important
+    background-position: center center!important
+  .owl-next
+    background-image: url("/img/right.png")!important
+    background-repeat: no-repeat!important
+    background-position: center center!important
+  button
+    margin-top: 10px
+    margin-left: 10px
+    width: 76px
+    height: 76px
+    span
+      display: none
+.darkHeader
+  background-color: #fff
+  box-shadow: 0 0 5px
+  a, svg
+    color: #000
+.navbar-toggler
+  border: none!important
+  box-shadow: none!important
 
 @media all and (max-width: 772px)
   .reviews_bg
@@ -94,3 +142,5 @@ svg
     height: 700px
   .reviews_icon
     max-width: 112px
+  header
+    padding: 0!important
