@@ -1,6 +1,6 @@
 body
   margin: 0
-  font-family: 'Raleway', arial
+  font-family: 'Raleway'
   position: inherit
   max-width: 1604px
 a
@@ -110,8 +110,13 @@ svg
   background: linear-gradient(90deg, rgba(244,244,244,1) 20%, rgba(0,0,0,0) 50%, rgba(244,244,244,1) 80%)
 .owl-nav
   display: flex
-  justify-content: end
-  margin-right: 40px
+  justify-content: space-between
+  align-items: center
+  z-index: 11
+  position: absolute
+  width: 100%
+  bottom: 0
+  height: 100%
   .owl-prev
     background-image: url("/img/left.png")!important
     background-repeat: no-repeat!important
@@ -135,7 +140,11 @@ svg
 .navbar-toggler
   border: none!important
   box-shadow: none!important
-
+#up
+  position: fixed
+  right: 3vw
+  bottom: 4vh
+  z-index: 20
 @media all and (max-width: 772px)
   .reviews_bg
     width: 360px
@@ -144,3 +153,16 @@ svg
     max-width: 112px
   header
     padding: 0!important
+  .owl-nav
+    display: flex
+    justify-content: end
+    margin-right: 40px
+    position: relative
+    .owl-prev
+      background-image: url("/img/left.png")!important
+      background-repeat: no-repeat!important
+      background-position: center center!important
+    .owl-next
+      background-image: url("/img/right.png")!important
+      background-repeat: no-repeat!important
+      background-position: center center!important

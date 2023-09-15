@@ -5,14 +5,8 @@ $(document).ready(function(){
         center:true,
         autoWidth: true,
         margin:20,
-        responsive:{
-            0:{
-                nav: true
-            }, //при ширине окна < 992 отображать 1 элемент
-            768:{
-                nav: false
-            }  //при ширине окна > 992 отображать 3 элемент
-        }
+        nav: true
+
     });
     $('.owl-carousel2').owlCarousel({
         loop:false,

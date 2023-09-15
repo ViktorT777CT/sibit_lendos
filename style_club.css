@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Raleway", arial;
+  font-family: "Raleway";
   position: inherit;
   max-width: 1604px;
 }
@@ -164,8 +164,13 @@ svg {
 
 .owl-nav {
   display: flex;
-  justify-content: end;
-  margin-right: 40px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 11;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 100%;
 }
 .owl-nav .owl-prev {
   background-image: url("/img/left.png") !important;
@@ -200,6 +205,13 @@ svg {
   box-shadow: none !important;
 }
 
+#up {
+  position: fixed;
+  right: 3vw;
+  bottom: 4vh;
+  z-index: 20;
+}
+
 @media all and (max-width: 772px) {
   .reviews_bg {
     width: 360px;
@@ -210,6 +222,22 @@ svg {
   }
   header {
     padding: 0 !important;
+  }
+  .owl-nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+    position: relative;
+  }
+  .owl-nav .owl-prev {
+    background-image: url("/img/left.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+  .owl-nav .owl-next {
+    background-image: url("/img/right.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
   }
 }
 
